@@ -45,6 +45,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Entity\Robot\Robot.cs" />
     <Compile Include="MainForm.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -82,7 +83,6 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Entity\Object\" />
-    <Folder Include="Entity\Robot\" />
     <Folder Include="FuzzyLogic\" />
     <Folder Include="Misc\Util\" />
   </ItemGroup>

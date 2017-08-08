@@ -9,7 +9,7 @@ namespace RobotSoccer.Misc.Geometry
 {
     public static class Geometry
     {
-        private static PointF FindPointFrom(PointF basePoint, Angle angle, float distance)
+        public static PointF FindPointFrom(PointF basePoint, Angle angle, float distance)
         {
             float x = (float)(Math.Cos(angle.Radian) * distance);
             float y = (float)(Math.Sin(angle.Radian) * distance);
@@ -20,12 +20,12 @@ namespace RobotSoccer.Misc.Geometry
             return new PointF(x, y);
         }
 
-        private static float EuclideanDistance(PointF firstPoint, PointF secondPoint)
+        public static float EuclideanDistance(PointF firstPoint, PointF secondPoint)
         {
             return (float)Math.Sqrt(SquaredDistance(firstPoint, secondPoint));
         }
 
-        private static float SquaredDistance(PointF firstPoint, PointF secondPoint)
+        public static float SquaredDistance(PointF firstPoint, PointF secondPoint)
         {
             return (float)(Math.Pow(firstPoint.X - secondPoint.X, 2) + Math.Pow(firstPoint.Y - secondPoint.Y, 2));
         }
