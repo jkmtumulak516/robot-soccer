@@ -45,7 +45,22 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Entity\Robot\Boundary\BoundingBox.cs" />
+    <Compile Include="Entity\Robot\Boundary\CircularBoundary.cs" />
+    <Compile Include="Entity\Robot\Boundary\RectangularBoundary.cs" />
+    <Compile Include="Entity\Robot\FollowerRobot.cs" />
     <Compile Include="Entity\Robot\Robot.cs" />
+    <Compile Include="FuzzyLogic\Delegate.cs" />
+    <Compile Include="FuzzyLogic\FuzzyMetaData.cs" />
+    <Compile Include="FuzzyLogic\FuzzyResult.cs" />
+    <Compile Include="FuzzyLogic\FuzzyResultBuilder.cs" />
+    <Compile Include="FuzzyLogic\FuzzyRule.cs" />
+    <Compile Include="FuzzyLogic\FuzzySharp.cs" />
+    <Compile Include="FuzzyLogic\FuzzyValue.cs" />
+    <Compile Include="FuzzyLogic\FuzzyValueBuilder.cs" />
+    <Compile Include="FuzzyLogic\IFuzzyResults.cs" />
+    <Compile Include="FuzzyLogic\IFuzzyRuleSet.cs" />
+    <Compile Include="FuzzyLogic\IFuzzyValues.cs" />
     <Compile Include="MainForm.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -83,7 +98,6 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Entity\Object\" />
-    <Folder Include="FuzzyLogic\" />
     <Folder Include="Misc\Util\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
